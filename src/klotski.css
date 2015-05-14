@@ -1,0 +1,77 @@
+/*created by Harris */
+
+.board {
+    position: relative;
+    width: 400px; /* 4 * 100px */
+    height: 500px; /* 5 * 100px */
+    margin: 0 auto;
+}
+
+.cell {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 25%;
+    height: 20%;
+    background-color: #dbdbdb;
+    border: 1px solid #aeaeae;
+}
+
+.tile {
+    box-sizing: border-box;
+    position: absolute;
+    background-color: #00ff58;
+    border: 1px solid red;
+    transition: all 0.3s ease-in-out;
+}
+
+.tile.oneByOne {
+    width: 25%;
+    height: 20%;
+    background-color: aqua;
+}
+
+.tile.twoByTwo {
+    width: 50%;
+    height: 40%;
+    background-color: red;
+}
+
+.tile.oneByTwo {
+    width: 25%;
+    height: 40%;
+    background-color: gold;
+}
+
+.tile.twoByOne {
+    width: 50%;
+    height: 20%;
+    background-color: yellowgreen;
+}
+
+.leftArrow {
+    position: absolute;
+    left: 0;
+    width: 20%;
+    height: 100%;
+}
+
+.rightArrow {
+    position: absolute;
+    right: 0;
+    width: 20%;
+    height: 100%;
+}
+
+.upArrow {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 20%;
+}
+
+.downArrow {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+}

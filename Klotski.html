@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Klotski Game</title>
+    <link rel="stylesheet" type="text/css" href="src/klotski.css">
+    <meta charset="UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="src/klotskiModel.js" ></script>
+    <script src="src/klotskiApp.js" ></script>
+</head>
+<body ng-app="klotskiApp" ng-controller="klotskiCtrl">
+<div class="board">
+    <div class="cell" ng-repeat="cell in cells">&nbsp;</div>
+    <div class="tile" ng-repeat="tile in tiles"
+         ng-class="tile.tileType"
+         ng-style="{left: (tile.x * 25) + '%', top: (tile.y * 20) + '%'}">
+        {{tile.label}},{{tile.x}},{{tile.y}}
+        <div class="rightArrow" ng-click="tile.moveRight()"></div>
+        <div class="leftArrow" ng-click="tile.moveLeft()"></div>
+        <div class="downArrow" ng-click="tile.moveDown()"></div>
+        <div class="upArrow" ng-click="tile.moveUp()"></div>
+    </div>
+</div>
+
+</body>
+</html>
