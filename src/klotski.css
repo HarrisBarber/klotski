@@ -12,53 +12,61 @@
     box-sizing: border-box;
     width: 25%;
     height: 20%;
-    background-color: #dbdbdb;
-    border: 1px solid #aeaeae;
+    background-color: #b1aa7a;
+    /*border: 1px solid #aeaeae;*/
 }
 
 .tile {
     box-sizing: border-box;
     position: absolute;
     background-color: #00ff58;
-    border: 1px solid red;
+    /*box-shadow: 0px 0px 5px 5px grey inset;*/
     transition: all 0.3s ease-in-out;
 }
 
 .tile.oneByOne {
     width: 25%;
     height: 20%;
-    background-color: aqua;
+    background-color: #c36000;
+    border: 5px outset #c36000;
+    /*box-shadow: 0px 0px 1px 5px #713622 inset;*/
 }
 
 .tile.twoByTwo {
     width: 50%;
     height: 40%;
-    background-color: red;
+    background-color: gold;
+    border: 5px outset gold;
+    /*box-shadow: 0px 0px 1px 5px #cdac00 inset;*/
 }
 
 .tile.oneByTwo {
     width: 25%;
     height: 40%;
-    background-color: gold;
+    background-color: #d2b64a;
+    border: 5px outset #d2b64a;
+    /*box-shadow: 0px 0px 1px 5px #a08640 inset;*/
 }
 
 .tile.twoByOne {
     width: 50%;
     height: 20%;
-    background-color: yellowgreen;
+    background-color: #a14f00;
+    border: 5px outset #a14f00;
+    /*box-shadow: 0px 0px 1px 5px #6f3936 inset;*/
 }
 
 .leftArrow {
     position: absolute;
     left: 0;
-    width: 20%;
+    width: 25%;
     height: 100%;
 }
 
 .rightArrow {
     position: absolute;
     right: 0;
-    width: 20%;
+    width: 25%;
     height: 100%;
 }
 
@@ -66,12 +74,12 @@
     position: absolute;
     top: 0;
     width: 100%;
-    height: 20%;
+    height: 25%;
 }
 
 .downArrow {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 20%;
+    height: 25%;
 }

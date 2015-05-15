@@ -14,11 +14,11 @@
     <div class="tile" ng-repeat="tile in tiles"
          ng-class="tile.tileType"
          ng-style="{left: (tile.x * 25) + '%', top: (tile.y * 20) + '%'}">
-        {{tile.label}},{{tile.x}},{{tile.y}}
-        <div class="rightArrow" ng-click="tile.moveRight()"></div>
-        <div class="leftArrow" ng-click="tile.moveLeft()"></div>
-        <div class="downArrow" ng-click="tile.moveDown()"></div>
-        <div class="upArrow" ng-click="tile.moveUp()"></div>
+        <!--{{tile.label}},{{tile.x}},{{tile.y}}-->
+        <div class="rightArrow" ng-if="tile.canMove.right" ng-click="tile.moveRight()"></div>
+        <div class="leftArrow" ng-if="tile.canMove.left" ng-click="tile.moveLeft()"></div>
+        <div class="downArrow" ng-if="tile.canMove.down" ng-click="tile.moveDown()"></div>
+        <div class="upArrow" ng-if="tile.canMove.up" ng-click="tile.moveUp()"></div>
     </div>
 </div>
 
