@@ -7,6 +7,7 @@ function Board () {
     this.nCols = 4;
     this.tiles = [];
     this.cellIsOccupied = []; // vector of vectors of boolean.  Initialized in this.init()
+    this.moveCount = 0;
     this.init();
 }
 

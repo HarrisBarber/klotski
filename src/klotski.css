@@ -20,6 +20,7 @@
     width: 400px; /* 4 * 100px */
     height: 500px; /* 5 * 100px */
     margin: 0 auto;
+    border: 10px ridge #b1aa7a;
 }
 
 .cell {
@@ -43,7 +44,7 @@
 .tile.oneByOne {
     width: 25%;
     height: 20%;
-    background: linear-gradient(135deg, #c36000 20%, #ffffff 42%,#c36000 92%);
+    background: linear-gradient(135deg, #c36000 20%, #ffb07f 42%,#c36000 92%);
     border: 5px outset #c36000;
     /*box-shadow: 0px 0px 1px 5px #713622 inset;*/
 }
@@ -51,7 +52,7 @@
 .tile.twoByTwo {
     width: 50%;
     height: 40%;
-    background: linear-gradient(135deg, gold 20%, #ffffff 42%,gold 92%);
+    background: linear-gradient(135deg, gold 20%, #fff7d8 42%,gold 92%);
     border: 5px outset gold;
     /*box-shadow: 0px 0px 1px 5px #cdac00 inset;*/
 }
@@ -59,7 +60,7 @@
 .tile.oneByTwo {
     width: 25%;
     height: 40%;
-    background: linear-gradient(135deg, #d2b64a 20%, #ffffff 42%,#d2b64a 92%);
+    background: linear-gradient(135deg, #d2b64a 20%, #ffe5aa 42%,#d2b64a 92%);
     border: 5px outset #d2b64a;
     /*box-shadow: 0px 0px 1px 5px #a08640 inset;*/
 }
@@ -67,7 +68,7 @@
 .tile.twoByOne {
     width: 50%;
     height: 20%;
-    background: linear-gradient(135deg, #a14f00 20%, #ffffff 42%,#a14f00 92%);
+    background: linear-gradient(135deg, #a14f00 20%, #c36000 42%,#a14f00 92%);
     border: 5px outset #a14f00;
     /*box-shadow: 0px 0px 1px 5px #6f3936 inset;*/
 }
