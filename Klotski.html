@@ -9,16 +9,25 @@
     <script src="src/klotskiApp.js" ></script>
 </head>
 <body ng-app="klotskiApp" ng-controller="klotskiCtrl">
+<h1 align="center">Klotski</h1>
 <div class="board">
     <div class="cell" ng-repeat="cell in cells">&nbsp;</div>
     <div class="tile" ng-repeat="tile in tiles"
          ng-class="tile.tileType"
          ng-style="{left: (tile.x * 25) + '%', top: (tile.y * 20) + '%'}">
-        <!--{{tile.label}},{{tile.x}},{{tile.y}}-->
-        <div class="rightArrow" ng-if="tile.canMove.right" ng-click="tile.moveRight()"></div>
-        <div class="leftArrow" ng-if="tile.canMove.left" ng-click="tile.moveLeft()"></div>
-        <div class="downArrow" ng-if="tile.canMove.down" ng-click="tile.moveDown()"></div>
-        <div class="upArrow" ng-if="tile.canMove.up" ng-click="tile.moveUp()"></div>
+        <!-- <div class="label">{{tile.label}}</div>  -->
+        <div class="rightArrow" ng-show="tile.canMove.right" ng-click="tile.moveRight()">
+            <div class="centered-arrow vcentered-arrow arrow-right"></div>
+        </div>
+        <div class="leftArrow" ng-show="tile.canMove.left" ng-click="tile.moveLeft()">
+            <div class="centered-arrow vcentered-arrow arrow-left"></div>
+        </div>
+        <div class="downArrow" ng-show="tile.canMove.down" ng-click="tile.moveDown()">
+            <div class="centered-arrow hcentered-arrow arrow-down"></div>
+        </div>
+        <div class="upArrow" ng-show="tile.canMove.up" ng-click="tile.moveUp()">
+            <div class="centered-arrow hcentered-arrow arrow-up"></div>
+        </div>
     </div>
 </div>
 
