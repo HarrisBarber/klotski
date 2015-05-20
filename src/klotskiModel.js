@@ -1,4 +1,9 @@
-// Created by Harris on 5/12/2015.
+/**
+ * Program Name: KlotskiModel.js
+ * Discussion:   Klotski Project
+ * Written By:   Harris Barber
+ * Date:         2015/05/20
+ */
 
 // THE BOARD
 

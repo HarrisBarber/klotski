@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--* Program Name: Klotski.html
+    * Discussion:   Klotski Project
+    * Written By:   Harris Barber
+    * Date:         2015/05/20-->
 <html>
 <head>
     <title>Klotski Game</title>
@@ -15,7 +19,6 @@
     <div class="tile" ng-repeat="tile in tiles"
          ng-class="tile.tileType"
          ng-style="{left: (tile.x * 25) + '%', top: (tile.y * 20) + '%'}">
-        <!-- <div class="label">{{tile.label}}</div>  -->
         <div class="rightArrow" ng-show="tile.canMove.right"
              ng-click="tile.moveRight(); board.moveCount = board.moveCount + 1">
             <div class="centered-arrow vcentered-arrow arrow-right"></div>
